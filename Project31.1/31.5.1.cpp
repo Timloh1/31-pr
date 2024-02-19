@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -15,7 +15,7 @@ public:
 
 	Toy(string _name) : name(_name) {};
 
-	string getName() {
+	string getName() { 
 		return name;
 	}
 
@@ -90,7 +90,6 @@ public:
 
 int main() {
 	
-	 CHECK
 	vector <shared_ptr<Dog>> dogs;
 	vector <shared_ptr<Toy>> toys;
 
@@ -126,6 +125,5 @@ int main() {
 	{
 		cout << dogs[i]->getToyPtr().use_count()  << endl;
 	}
-
 	
-}*/
+}

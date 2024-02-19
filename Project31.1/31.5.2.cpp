@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <vector>
 
@@ -51,11 +51,11 @@ public:
 
 			if (counter == 1) {
 				delete object;
+				--counter;
 				counter = 0;
 			}
 
 			object = new Toy(other.object->getName());
-			counter++;
 
 		}
 
@@ -94,8 +94,7 @@ public:
 
 shared_ptr_toy make_shared_toy(string name)
 {
-	shared_ptr_toy object("SomeToy");
-	counter++;
+	shared_ptr_toy object(name);
 	return object;
 }
 
@@ -114,9 +113,10 @@ int main() {
 		<< toy_03.getToyName() << " links:" << toy_03.use_count() << std::endl;
 	std::cout << "=================================================" << std::endl;
 	toy_01.reset();
+	toy_02.reset();
 	std::cout << toy_01.getToyName() << " links:" << toy_01.use_count() << "  "
 		<< toy_02.getToyName() << " links:" << toy_02.use_count() << "  "
 		<< toy_03.getToyName() << " links:" << toy_03.use_count() << std::endl;
 	std::cout << "=================================================" << std::endl;
 	return 0;
-}
+}*/
